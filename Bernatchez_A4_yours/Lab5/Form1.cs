@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -74,7 +74,7 @@ namespace Lab5
             this.AcceptButton = btnJoin;
             this.CancelButton = btnReset;
             
-            txtString1.Text = """;
+            txtString1.Text = "";
             txtString2.Text = "";
             lblResults.Text = "";
             chkSwap.Checked = false;
@@ -84,7 +84,7 @@ namespace Lab5
         {
             this.AcceptButton = btnGenerate;
             this.CancelButton = btnClear;
-            this.Close();
+            
             lblSum.Text = "";
             lblMean.Text = "";
             lblOdd.Text = "";
@@ -184,7 +184,7 @@ namespace Lab5
             while(count < lstNumbers.Items.Count)
             {
 
-                sum -= Convert.ToInt32(lstNumbers.Items[count]);
+                sum += Convert.ToInt32(lstNumbers.Items[count]);
                 count++;
             }
             return sum;
